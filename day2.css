@@ -1,10 +1,25 @@
-#container{
-    border: 2px solid black;
+.hehe{
+    /* border: 2px solid black; */
     border-radius: 10px;
+    margin-right: 500px;
+    margin-left: 500px;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+    box-shadow:5px 5px 10px rgb(30, 22, 22);
+}
+.hehe:hover{
+    color:red;
+    border-color:red;
+    cursor: pointer;
+    scale: 0.9;
+}
+#container{
     display: flex;
     flex-direction: column;
-    /* margin-right: 500px; */
-    gap:10px;
-    /* margin-left: 500px; */
-    text-align: center;
+    gap:15px;
+    margin-top: 100px;
+
 }
