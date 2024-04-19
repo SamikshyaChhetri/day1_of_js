@@ -16,9 +16,6 @@ const employees = [
  })
 //  for (var i=0; i<employees.length; i++){
     //  console.log(employees[i].name+" " + "earns"+ " "+ employees[i].salary)
-
-
-
     // document.write("NAME : " + employees[i].name+" "+ "Salary :"+employees[i].salary+"<br>");
     // var result=employees[i];
     // document.getElementById(sam).innerHTML=result;
