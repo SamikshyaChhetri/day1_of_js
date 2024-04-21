@@ -91,8 +91,8 @@
 #deleted_item{
     border-radius: 1em;
     padding: 0.8em;
-    margin-top: 10em;
-    margin-left: 30em;
+    margin-top: 1em;
+    /* margin-left: 30em; */
     background-color: #edcaec;
     border: none;
     box-shadow: 5px 3px 5px 1px rgb(35, 31, 31);
@@ -120,7 +120,9 @@
 }
 #all_item{
     border-radius: 1em;
-    margin-left: 2em;
+    margin-top: 1em;
+
+    /* margin-left: 2em; */
     background-color: #edcaec;
     border: none;
     box-shadow: 5px 3px 5px 1px rgb(35, 31, 31);
@@ -130,6 +132,36 @@
 
 }
 #all_item:hover{
+    background-color: #f368e0;
+    color:white;
+    scale: 0.9;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    margin-top: 5em;
+    /* margin-top: 20em; */
+}
+#pending_item{
+    border-radius: 1em;
+    margin-top: 1em;
+    /* margin-left: 2em; */
+    background-color: #edcaec;
+    border: none;
+    box-shadow: 5px 3px 5px 1px rgb(35, 31, 31);
+    transition: 0.3s ease-in-out ;
+    cursor: pointer;
+    padding: 0.8em;
+}
+#pending_item:hover{
     background-color: #f368e0;
     color:white;
     scale: 0.9;
