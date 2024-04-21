@@ -30,20 +30,34 @@
 const ipp = document.getElementById('ip');
 const ch = document.getElementById('check');
 let arr = [];
-ch.addEventListener('click', () => {
+ch.addEventListener('click', (e) => {
+    console.log(e.target.getAttribute('id'));
     const element = ipp.value;
+    if(element!==''){
     arr.push(element);
     ipp.value = '';
     display();
+    }
+    else {
+        alert("Empty string cannot be listed");
+    }
 });
 function display() {
     const display_arr = document.getElementById('disp');
     display_arr.innerHTML="";
-    arr.forEach((a)=>{
-        display_arr.innerHTML+=`<div class="dis">${a}</div>`;
+    arr.forEach((a,index)=>{
+        display_arr.innerHTML+=`<div class="main">
+        <div class="dis">${a}
+        <button data-index=${index} type="check" id="delete" onclick="deleteitem(this)">Delete</button></div></div>`;
 
     })
     // display.innerHTML = arr;
+}
+function deleteitem(a){
+    const index=a.getAttribute('data-index');
+    arr.splice(index,1);
+    display();
+
 }
 
 
