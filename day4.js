@@ -65,8 +65,8 @@ function display_deleteditem(){
     // deleted.innerHTML="";
     if(deleteditems.length!==0){
     deleteditems.forEach((a,index)=>{
-        deleted.innerHTML+=`<div class="diss">${a}`;
         deleted.innerHTML="";
+        deleted.innerHTML+=`<div class="diss">${a}`;
     });
     }
     else{
@@ -75,6 +75,13 @@ function display_deleteditem(){
 
 }
 
+function display_pending(){
+    const pending=document.getElementById("disp");
+    pending.innerHTML="";
+    arr.forEach((a,index)=>{
+        pending.innerHTML+=`<div class="diss">${a}`;
+    })
+}
 
 
 
