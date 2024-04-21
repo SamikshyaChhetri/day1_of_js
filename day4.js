@@ -53,7 +53,6 @@ function display() {
         <button data-index=${index} type="check" id="delete" onclick="deleteitem(this)">Delete</button></div></div>`;
 
     })
-    // display.innerHTML = arr;
 }
 function deleteitem(a){
     const index=a.getAttribute('data-index');
@@ -62,11 +61,11 @@ function deleteitem(a){
     display();
 }
 function display_deleteditem(){
-    // display_arr.innerHTML="";
     const deleted=document.getElementById("disp");
-    // deleted.innerHTML="";
+    deleted.innerHTML="";
     deleteditems.forEach((a,index)=>{
         deleted.innerHTML+=`<div class="diss">${a}`;
+
     })
 }
 
