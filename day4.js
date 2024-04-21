@@ -78,9 +78,10 @@ function display_deleteditem(){
 function display_pending(){
     const pending=document.getElementById("disp");
     pending.innerHTML="";
-    arr.forEach((a,index)=>{
-        pending.innerHTML+=`<div class="diss">${a}`;
-    })
+    display();
+    // arr.forEach((a,index)=>{
+    //     pending.innerHTML+=`<div class="diss">${a}`;
+    // })
 }
 
 
