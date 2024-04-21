@@ -30,6 +30,7 @@
 const ipp = document.getElementById('ip');
 const ch = document.getElementById('check');
 let arr = [];
+let deleteditems=[];
 ch.addEventListener('click', (e) => {
     console.log(e.target.getAttribute('id'));
     const element = ipp.value;
@@ -43,6 +44,7 @@ ch.addEventListener('click', (e) => {
     }
 });
 function display() {
+    // deleted.innerHTML="";
     const display_arr = document.getElementById('disp');
     display_arr.innerHTML="";
     arr.forEach((a,index)=>{
@@ -55,9 +57,21 @@ function display() {
 }
 function deleteitem(a){
     const index=a.getAttribute('data-index');
+    deleteditems.push(arr[index]);
     arr.splice(index,1);
     display();
-
 }
+function display_deleteditem(){
+    // display_arr.innerHTML="";
+    const deleted=document.getElementById("disp");
+    // deleted.innerHTML="";
+    deleteditems.forEach((a,index)=>{
+        deleted.innerHTML+=`<div class="diss">${a}`;
+    })
+}
+
+
+
+
 
 
