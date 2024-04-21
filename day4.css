@@ -41,11 +41,14 @@
     background-color: aliceblue;
 
 
+
 }
 #check:hover{
     background-color: #f368e0;
     color: white;
     scale:0.9;
+    box-shadow: 5px 3px 4px 2px rgb(35, 31, 31);
+
 
 }
 .dis{
@@ -69,7 +72,8 @@
     padding: 0.4em 0.6em 0.4em 0.6em;
     cursor: pointer;
     transition: 0.3s ease-in-out ;
-    /* border: none; */
+    border: none;
+    box-shadow: 5px 3px 4px 2px rgb(35, 31, 31);
 
 }
 #delete:hover{
