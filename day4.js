@@ -62,12 +62,20 @@ function deleteitem(a){
 }
 function display_deleteditem(){
     const deleted=document.getElementById("disp");
-    deleted.innerHTML="";
+    // deleted.innerHTML="";
+    if(deleteditems.length!==0){
     deleteditems.forEach((a,index)=>{
         deleted.innerHTML+=`<div class="diss">${a}`;
+        deleted.innerHTML="";
+    });
+    }
+    else{
+        alert("No items have been deleted");
+    }
 
-    })
 }
+
+
 
 
 
