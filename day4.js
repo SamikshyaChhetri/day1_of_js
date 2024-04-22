@@ -50,39 +50,44 @@ function display() {
     arr.forEach((a,index)=>{
         display_arr.innerHTML+=`<div class="main">
         <div class="dis">${a}
-        <button data-index=${index} type="check" id="delete" onclick="deleteitem(this)">Delete</button></div></div>`;
+        <button data-index=${index} type="check" class="delete">Delete</button></div></div>`;
 
     })
 }
-function deleteitem(a){
+const deleteitem=document.querySelectorAll('.delete');
+deleteitem.forEach((a)=>{
+a.addEventListener('click',()=>{
     const index=a.getAttribute('data-index');
     deleteditems.push(arr[index]);
     arr.splice(index,1);
     display();
-}
-function display_deleteditem(){
+})
+})
+// a.addEventListener('onclick',()=>{
+//     const index=a.getAttribute('data-index');
+//     deleteditems.push(arr[index]);
+//     arr.splice(index,1);
+//     display();
+// })
+const dlt=document.getElementById("deleted_item");
+dlt.addEventListener('click',()=>{;
     const deleted=document.getElementById("disp");
-    // deleted.innerHTML="";
     if(deleteditems.length!==0){
     deleteditems.forEach((a,index)=>{
         deleted.innerHTML="";
         deleted.innerHTML+=`<div class="diss">${a}`;
     });
-    }
-    else{
+}
+else{
         alert("No items have been deleted");
     }
-
-}
-
-function display_pending(){
+});
+const pend=document.getElementById('pending_item');
+pend.addEventListener('click',()=>{
     const pending=document.getElementById("disp");
     pending.innerHTML="";
     display();
-    // arr.forEach((a,index)=>{
-    //     pending.innerHTML+=`<div class="diss">${a}`;
-    // })
-}
+})
 
 
 

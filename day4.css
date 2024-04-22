@@ -66,7 +66,7 @@
     justify-content: space-between;
     align-items: center;
 }
-#delete{
+.delete{
     margin-left: 18em;
     border-radius: 0.7em;
     padding: 0.4em 0.6em 0.4em 0.6em;
@@ -76,7 +76,7 @@
     box-shadow: 5px 3px 5px 1px rgb(35, 31, 31);
 
 }
-#delete:hover{
+.delete:hover{
     background-color: red;
     color: white;
     scale:0.9;
