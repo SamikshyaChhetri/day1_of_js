@@ -13,12 +13,10 @@ body{
 }
 #minute{
     margin-top: 0.5em;
-
 }
 #second{
     margin-right: 0.5em;
     margin-top: 0.5em;
-
 }
 .cover{
     display: flex;
