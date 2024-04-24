@@ -37,7 +37,6 @@ body{
 }
 .hehe{
     display: flex;
-    /* justify-content: space-between; */
     padding:2em 5em 0em 6em;
     gap: 5px;
 
