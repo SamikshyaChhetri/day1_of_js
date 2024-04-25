@@ -18,6 +18,17 @@ body{
     margin-right: 0.5em;
     margin-top: 0.5em;
 }
+#state{
+    margin-right: 1em;
+    color: rgb(255, 255, 255);
+    margin-top: 1.5em;
+    font-size: large;
+    padding: 0.5em;
+    box-shadow: 2px 1px 2px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, rgb(218, 190, 233), rgb(117, 21, 227));
+
+}
 .cover{
     display: flex;
     flex-direction: column;
