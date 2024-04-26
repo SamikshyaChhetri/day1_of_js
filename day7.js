@@ -1,15 +1,30 @@
-// document.addEventListener("keydown",(e)=>{
-//     console.log(e.key);
-// })
 const a = document.getElementById("child");
-console.log(a.style.backgroundColor);
-// document.addEventListener("keydown", (e) => {
-//   if (e.key === "ArrowRight") {
-//     a.style.left += "1px";
-//   } else if (e.key === "ArrorLeft") {
-//   } else if (e.key === "ArrowTop") {
-//   } else if (e.key === "ArrowBottom") {
-//   } else {
-//     alert("Invalid key");
-//   }
-// });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") {
+    let b = parseInt(a.style.left);
+    if (b < window.innerWidth - 300) {
+      a.style.left = b + 1 + "px";
+    }
+  } else if (e.key === "ArrowLeft") {
+    let b = parseInt(a.style.left);
+    if (b != "1") {
+      a.style.left = b - 1 + "px";
+    } else {
+      alert("boundary reached");
+    }
+  } else if (e.key === "ArrowUp") {
+    let b = parseInt(a.style.top);
+    if (b != "1") {
+      a.style.top = b - 1 + "px";
+    } else {
+      alert("Boundary reached");
+    }
+  } else if (e.key === "ArrowDown") {
+    let b = parseInt(a.style.top);
+    if (b < window.innerHeight - 150) {
+      a.style.top = b + 1 + "px";
+    } else {
+      alert("Invalid key");
+    }
+  }
+});
