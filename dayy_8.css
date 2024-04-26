@@ -1,7 +1,6 @@
 body {
   position: relative;
-  /* background-image: url(/imagess/sky.avif); */
-  background-image: linear-gradient(to right, lightgreen, yellow);
+  background-image: url(/imagess/sky.avif);
   background-size: cover;
 }
 #container {
