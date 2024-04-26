@@ -1,7 +1,8 @@
 #ground {
   position: relative;
-  background-color: blanchedalmond;
-  height: 97vh;
+  background-image: linear-gradient(90deg, lightgreen, yellow);
+  height: 680px;
+  width: 1420px;
   border: 4px solid rgb(0, 0, 0);
   border-radius: 20px;
 }
@@ -14,4 +15,11 @@
   color: blanchedalmond;
   font-size: larger;
   border-radius: 20px;
+}
+.sam {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: large;
+  margin: 1em;
 }
