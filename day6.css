@@ -8,7 +8,7 @@ body{
     width: 100%;
 }
 #hrs{
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-top: 0.5em;
 }
 #minute{
@@ -19,7 +19,6 @@ body{
     margin-top: 0.5em;
 }
 #state{
-    margin-right: 1em;
     color: rgb(255, 255, 255);
     margin-top: 1.5em;
     font-size: large;

@@ -2,13 +2,17 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-image: url(/imagess/nkk.jpg);
+  background-image: url(./imagess/nkk.jpg);
   background-size: cover;
   overflow: hidden; /* Prevent content from overflowing */
+  scroll-behavior: smooth;
 }
 h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  margin-top: 7em;
 }
 span {
   color: rgb(68, 27, 193);
@@ -22,6 +26,7 @@ body::before {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.692); /* Adjust opacity as needed */
   filter: blur(15px); /* Adjust the blur radius as needed */
+  scroll-behavior: smooth;
 }
 img {
   position: relative;
@@ -42,14 +47,11 @@ img {
   z-index: 1;
   display: flex;
   border: none;
+  scroll-behavior: smooth;
 }
 .cont {
   display: flex;
   justify-content: center;
   gap: 3em;
-}
-h2 {
-  position: relative;
-  text-align: center;
-  margin-top: 7em;
+  scroll-behavior: smooth;
 }
