@@ -1,6 +1,6 @@
 body {
   position: relative;
-  background-image: url(/imagess/sky.avif);
+  background-image: url(./imagess/sky.avif);
   background-size: cover;
 }
 #container {

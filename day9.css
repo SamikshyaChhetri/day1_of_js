@@ -6,13 +6,17 @@ body {
   background-size: cover;
   overflow: hidden; /* Prevent content from overflowing */
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   position: relative;
   text-align: center;
-  margin-top: 7em;
+  margin-top: 2em;
 }
 span {
   color: rgb(68, 27, 193);
@@ -27,17 +31,16 @@ body::before {
   background-color: rgba(255, 255, 255, 0.692); /* Adjust opacity as needed */
   filter: blur(15px); /* Adjust the blur radius as needed */
   scroll-behavior: smooth;
+  z-index: -1;
 }
 img {
-  position: relative;
   height: 250px;
   width: 250px;
   border-radius: 50%;
   top: 10em;
   left: 38em;
-  /* margin: 7em 0em 0em 7em; */
 }
-.cont input[type="button"] {
+.cont button[type="button"] {
   padding: 0.5em 1em;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px black;
@@ -54,4 +57,8 @@ img {
   justify-content: center;
   gap: 3em;
   scroll-behavior: smooth;
+}
+
+#no {
+  position: absolute;
 }
