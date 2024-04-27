@@ -8,6 +8,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
 }
@@ -41,7 +42,7 @@ img {
   left: 38em;
 }
 .cont button[type="button"] {
-  padding: 0.5em 1em;
+  padding: 1em 1.5em;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -51,6 +52,9 @@ img {
   display: flex;
   border: none;
   scroll-behavior: smooth;
+  background-image: linear-gradient(100deg, rgb(131, 81, 200), white);
+  /* background-color: pink; */
+  color: rgb(0, 0, 0);
 }
 .cont {
   display: flex;
