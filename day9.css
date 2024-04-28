@@ -66,3 +66,9 @@ img {
 #no {
   position: absolute;
 }
+video {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-image: linear-gradient(white, black);
+}
