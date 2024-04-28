@@ -8,7 +8,10 @@ element.addEventListener("mouseover", (e) => {
 const wrapp = document.getElementById("wrap");
 const vdoo = document.getElementById("vdo");
 const ele = document.getElementById("yes");
+const bodyElement = document.body;
 ele.addEventListener("click", (e) => {
   wrapp.style.display = "none";
   vdoo.style.display = "block";
+  bodyElement.style.backgroundImage = "url('./imagess/nehuu.JPG')";
+  bodyElement.style.backgroundSize = "cover";
 });
