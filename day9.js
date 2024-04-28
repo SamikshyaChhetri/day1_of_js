@@ -5,3 +5,5 @@ element.addEventListener("mouseover", (e) => {
   element.style.left = randomx + "px";
   element.style.top = randomy + "px";
 });
+const ele = document.getElementById("yes");
+ele.addEventListener("click", (e) => {});
