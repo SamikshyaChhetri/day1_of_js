@@ -18,70 +18,20 @@ ele.addEventListener("click", (e) => {
   bodyElement.style.backgroundImage = "url('./imagess/nehuu.JPG')";
   bodyElement.style.backgroundSize = "cover";
 });
-function animate() {
-  const main = document.querySelector("h3");
-  main.innerHTML = "";
+const string = "Aww! LOVE YOU MORE 🐥 ";
+const newele = document.getElementById("text");
+const splitted_str = string.split("");
+let index = 0;
+const animate = () => {
+  newele.innerHTML += splitted_str[index];
   setTimeout(() => {
-    main.innerHTML += "A";
-  }, 200);
-  setTimeout(() => {
-    main.innerHTML += "w";
-  }, 400);
-  setTimeout(() => {
-    main.innerHTML += "w";
-  }, 600);
-  setTimeout(() => {
-    main.innerHTML += " ";
-  }, 600);
-  setTimeout(() => {
-    main.innerHTML += "I";
-  }, 800);
-  setTimeout(() => {
-    main.innerHTML += " ";
-  }, 1000);
-  setTimeout(() => {
-    main.innerHTML += "L";
-  }, 1200);
-  setTimeout(() => {
-    main.innerHTML += "O";
-  }, 1400);
-  setTimeout(() => {
-    main.innerHTML += "V";
-  }, 1600);
-  setTimeout(() => {
-    main.innerHTML += "E";
-  }, 1600);
-  setTimeout(() => {
-    main.innerHTML += " ";
-  }, 1800);
-  setTimeout(() => {
-    main.innerHTML += "Y";
-  }, 2000);
-  setTimeout(() => {
-    main.innerHTML += "O";
-  }, 2200);
-  setTimeout(() => {
-    main.innerHTML += "U";
-  }, 2200);
-  setTimeout(() => {
-    main.innerHTML += " ";
-  }, 2200);
-  setTimeout(() => {
-    main.innerHTML += "T";
-  }, 2400);
-  setTimeout(() => {
-    main.innerHTML += "O";
-  }, 2600);
-  setTimeout(() => {
-    main.innerHTML += "O";
-  }, 2800);
-  setTimeout(() => {
-    main.innerHTML += "❤️‍🩹";
-  }, 2900);
+    index += 1;
 
-  setTimeout(() => {
+    if (index == splitted_str.length) {
+      newele.innerHTML = "";
+      index = 0;
+    }
     animate();
-  }, 5000);
-}
-
+  }, 250);
+};
 animate();

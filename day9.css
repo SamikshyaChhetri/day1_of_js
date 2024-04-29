@@ -73,8 +73,10 @@ video {
   border-radius: 50%;
   background-image: linear-gradient(white, black);
 }
-h3 {
+#text {
   font-size: 1.6em;
   padding: 1em 0em 0em 2em;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(188, 14, 14);
+  font-weight: bold;
 }
