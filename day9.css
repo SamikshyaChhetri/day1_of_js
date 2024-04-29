@@ -7,7 +7,6 @@ body {
   overflow: hidden; /* Prevent content from overflowing */
   scroll-behavior: smooth;
   display: flex;
-  justify-content: center;
   background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
@@ -72,6 +71,7 @@ video {
   width: 350px;
   border-radius: 50%;
   background-image: linear-gradient(white, black);
+  margin-top: 30%;
 }
 #text {
   font-size: 1.6em;

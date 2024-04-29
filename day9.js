@@ -18,7 +18,7 @@ ele.addEventListener("click", (e) => {
   bodyElement.style.backgroundImage = "url('./imagess/nehuu.JPG')";
   bodyElement.style.backgroundSize = "cover";
 });
-const string = "Aww! LOVE YOU MORE 🐥 ";
+const string = "Aww! LOVE YOU MORE  ";
 const newele = document.getElementById("text");
 const splitted_str = string.split("");
 let index = 0;
