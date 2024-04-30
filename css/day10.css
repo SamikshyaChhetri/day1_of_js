@@ -1,0 +1,30 @@
+body {
+  /* display: flex; */
+}
+.wrap {
+  gap: 0px;
+  margin: 5em;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+body {
+  background-color: rgb(205, 223, 203);
+}
