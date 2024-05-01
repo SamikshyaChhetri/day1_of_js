@@ -6,28 +6,34 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  border: 2px solid black;
-  width: 35%;
-  height: 90vh;
-  gap: 0;
-  margin: 1em;
+  /* border: 2px solid black; */
+  margin-top: 3em;
+
+  border-radius: 20px;
+  padding: 2em;
+  padding-top: 4em;
+}
+.items {
+  width: 2em;
+  height: 2em;
+  margin: 0.2em;
+  border-radius: 50px;
+  font-size: 30px;
+  /* border: 2px solid black; */
+  background-color: rgb(177, 241, 220);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items:hover {
+  background-color: rgb(163, 227, 195);
+  cursor: pointer;
+}
+.wrap {
   background-image: linear-gradient(
     rgb(198, 253, 224),
     white,
     rgb(217, 252, 234)
   );
-}
-.items {
-  width: fit-content;
-  margin: 0.7em;
-  aspect-ratio: 1;
-  border-radius: 10px;
-  font-size: 30px;
-  border: 2px solid black;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-}
-.items:hover {
-  background-color: rgb(175, 244, 210);
 }
