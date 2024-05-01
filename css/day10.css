@@ -72,10 +72,10 @@ body {
   flex-direction: column;
 }
 #display {
-  text-align: center;
-  padding: 3em;
-  /* border: 1px solid black; */
-  margin: 2px;
+  text-align: right;
+  padding: 1em;
+  margin: 0.2em;
   border-radius: 20px;
   margin-top: 1em;
+  font-size: 20px;
 }
