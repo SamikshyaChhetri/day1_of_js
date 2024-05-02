@@ -17,7 +17,6 @@ element.forEach((item) => {
     displa.innerHTML = input_str;
   });
 });
-
 const res = document.querySelector(".eql");
 res.addEventListener("click", calculate);
 function calculate() {
