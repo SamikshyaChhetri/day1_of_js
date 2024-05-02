@@ -27,7 +27,6 @@ function calculate() {
     displa.innerHTML = "syntax error";
   }
 }
-
 const ac = document.querySelector(".Aclear");
 ac.addEventListener("click", aclear);
 function aclear() {
