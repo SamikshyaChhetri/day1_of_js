@@ -17,6 +17,7 @@ element.forEach((item) => {
     displa.innerHTML = input_str;
   });
 });
+
 const res = document.querySelector(".eql");
 res.addEventListener("click", calculate);
 function calculate() {
@@ -27,6 +28,7 @@ function calculate() {
     displa.innerHTML = "syntax error";
   }
 }
+
 const ac = document.querySelector(".Aclear");
 ac.addEventListener("click", aclear);
 function aclear() {
