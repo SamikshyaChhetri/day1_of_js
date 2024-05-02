@@ -7,7 +7,6 @@ change.addEventListener("mouseover", () => {
 change.addEventListener("mouseout", () => {
   change.style.backgroundImage = originalBackgroundImage;
 });
-
 let input_str = "";
 const displa = document.getElementById("display");
 const element = document.querySelectorAll(".itm");
