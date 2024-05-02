@@ -1,12 +1,3 @@
-// const elements = document.querySelectorAll(".items");
-
-// elements.forEach((element) => {
-//   element.addEventListener("click", (e) => {
-//     console.log(e.target);
-//     const index = e.target.getAttribute("data-value");
-//     console.log(index);
-//   });
-// });
 const change = document.getElementById("wrap");
 const originalBackgroundImage = change.style.backgroundImage;
 change.addEventListener("mouseover", () => {
