@@ -13,8 +13,8 @@ element.forEach((item) => {
 
 const res = document.querySelector(".eql");
 res.addEventListener("click", calculate);
-if (running) {
-  function calculate() {
+function calculate() {
+  if (running) {
     try {
       const result = eval(input_str);
       displa.value = result;
@@ -29,8 +29,8 @@ if (running) {
 }
 const ac = document.querySelector(".Aclear");
 ac.addEventListener("click", aclear);
-if (running) {
-  function aclear() {
+function aclear() {
+  if (running) {
     input_str = "";
     displa.value = input_str;
     displa.placeholder = "0";
@@ -48,7 +48,7 @@ onn.addEventListener("click", () => {
   if (onn.innerHTML == "ON") {
     onn.innerHTML = "OFF";
     running = true;
-    displa.innerHTML = "";
+    displa.placeholder = "|";
   } else {
     onn.innerHTML = "ON";
     running = false;
