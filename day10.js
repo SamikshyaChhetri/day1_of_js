@@ -16,7 +16,9 @@ function calculate() {
     displa.value = result;
     input_str = result;
   } catch (error) {
-    displa.value = "syntax error";
+    displa.value = "Syntax Error!";
+    displa.style.color = "red";
+    displa.style.fontSize = "20px";
     input_str = "";
   }
 }
