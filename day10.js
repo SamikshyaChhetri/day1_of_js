@@ -23,6 +23,7 @@ function calculate() {
   try {
     const result = eval(input_str);
     displa.innerHTML = result;
+    input_str = result;
   } catch (error) {
     displa.innerHTML = "syntax error";
   }
