@@ -23,10 +23,10 @@ body {
   justify-content: center;
 }
 .items:hover {
-  /* background-color: rgb(163, 227, 195); */
+  background-color: rgb(163, 227, 195);
   background-image: linear-gradient(to right, rgb(12, 214, 113), white);
   cursor: pointer;
-  box-shadow: 1px 1px 4px 1px black;
+  box-shadow: 1px 1px 4px 1px gray;
 }
 .eql {
   grid-column: span 2;
