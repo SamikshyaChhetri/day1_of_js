@@ -13,7 +13,7 @@ const element = document.querySelectorAll(".itm");
 element.forEach((item) => {
   item.addEventListener("click", (e) => {
     input_str += e.target.getAttribute("data-value");
-    displa.innerHTML = input_str;
+    displa.value = input_str;
   });
 });
 
@@ -22,10 +22,10 @@ res.addEventListener("click", calculate);
 function calculate() {
   try {
     const result = eval(input_str);
-    displa.innerHTML = result;
+    displa.value = result;
     input_str = result;
   } catch (error) {
-    displa.innerHTML = "syntax error";
+    displa.value = "syntax error";
     input_str = "";
   }
 }
@@ -33,12 +33,13 @@ const ac = document.querySelector(".Aclear");
 ac.addEventListener("click", aclear);
 function aclear() {
   input_str = "";
-  displa.innerHTML = input_str;
+  displa.value = input_str;
+  displa.placeholder = "0";
 }
 const c = document.querySelector(".clear");
 c.addEventListener("click", () => {
   input_str = input_str.slice(0, -1);
-  displa.innerHTML = input_str;
+  displa.value = input_str;
 });
 const onn = document.querySelector(".on");
 onn.addEventListener("click", () => {
@@ -46,5 +47,6 @@ onn.addEventListener("click", () => {
     onn.innerHTML = "OFF";
   } else {
     onn.innerHTML = "ON";
+    displa.value = "Press ON to start";
   }
 });
