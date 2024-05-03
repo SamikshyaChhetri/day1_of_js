@@ -26,6 +26,7 @@ function calculate() {
     input_str = result;
   } catch (error) {
     displa.innerHTML = "syntax error";
+    input_str = "";
   }
 }
 const ac = document.querySelector(".Aclear");
