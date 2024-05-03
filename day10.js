@@ -7,6 +7,7 @@ element.forEach((item) => {
     if (running) {
       input_str += e.target.getAttribute("data-value");
       displa.value = input_str;
+      displa.style.color = "black";
     }
   });
 });
