@@ -1,6 +1,9 @@
 let input_str = "";
 let running = false;
 const displa = document.getElementById("display");
+displa.value = "Press ON to start";
+displa.style.backgroundColor = "white";
+
 const element = document.querySelectorAll(".itm");
 element.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -52,8 +55,8 @@ onn.addEventListener("click", () => {
     displa.value = "|";
   } else {
     onn.innerHTML = "ON";
-    running = false;
     displa.value = "Press ON to start";
+    running = false;
     input_str = "";
   }
 });
