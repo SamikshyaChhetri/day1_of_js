@@ -48,10 +48,10 @@ onn.addEventListener("click", () => {
   if (onn.innerHTML == "ON") {
     onn.innerHTML = "OFF";
     running = true;
-    displa.placeholder = "|";
+    displa.value = "|";
   } else {
     onn.innerHTML = "ON";
     running = false;
-    displa.placeholder = "Press ON to start";
+    displa.value = "Press ON to start";
   }
 });
