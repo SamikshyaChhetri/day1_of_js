@@ -40,3 +40,11 @@ c.addEventListener("click", () => {
   input_str = input_str.slice(0, -1);
   displa.innerHTML = input_str;
 });
+const onn = document.querySelector(".on");
+onn.addEventListener("click", () => {
+  if (onn.innerHTML == "ON") {
+    onn.innerHTML = "OFF";
+  } else {
+    onn.innerHTML = "ON";
+  }
+});
