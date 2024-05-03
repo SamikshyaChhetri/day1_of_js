@@ -53,5 +53,6 @@ onn.addEventListener("click", () => {
     onn.innerHTML = "ON";
     running = false;
     displa.value = "Press ON to start";
+    input_str = "";
   }
 });
