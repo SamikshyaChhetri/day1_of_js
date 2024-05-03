@@ -57,11 +57,7 @@ body {
 }
 
 #wrap {
-  background-image: linear-gradient(
-    rgb(198, 253, 224),
-    white,
-    rgb(217, 252, 234)
-  );
+  background-image: linear-gradient(lightgreen, white, lightgreen);
   border-radius: 20px;
   box-shadow: 2px 2px 3px 2px rgb(18, 17, 17);
 

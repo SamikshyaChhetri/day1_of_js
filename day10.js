@@ -1,12 +1,3 @@
-const change = document.getElementById("wrap");
-const originalBackgroundImage = change.style.backgroundImage;
-change.addEventListener("mouseover", () => {
-  change.style.backgroundImage =
-    "linear-gradient(lightgreen, white, lightgreen)";
-});
-change.addEventListener("mouseout", () => {
-  change.style.backgroundImage = originalBackgroundImage;
-});
 let input_str = "";
 const displa = document.getElementById("display");
 const element = document.querySelectorAll(".itm");
@@ -47,6 +38,6 @@ onn.addEventListener("click", () => {
     onn.innerHTML = "OFF";
   } else {
     onn.innerHTML = "ON";
-    displa.value = "Press ON to start";
+    displa.placeholder = "Press ON to start";
   }
 });
