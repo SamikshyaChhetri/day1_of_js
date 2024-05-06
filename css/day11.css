@@ -55,7 +55,7 @@ input:hover {
   border-radius: 10px;
 }
 
-/* #encryption:hover {
+#encryption:hover {
   box-shadow: none;
   cursor: pointer;
   transform: scale(1.1);
@@ -63,7 +63,7 @@ input:hover {
   color: #ffee10;
 }
 
-#decryption {
+/* #decryption {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 25em;
   padding: 1em;
