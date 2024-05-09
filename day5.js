@@ -12,9 +12,7 @@ const myTimeout = setTimeout(() => {
 // function myGreeting() {
 //   document.getElementById("settime").innerHTML = "hi samikshya...!"
 // }
-
 //----->NOTES<----
-
 // getDate(): Returns the day of the month (1-31).
 // getDay(): Returns the day of the week (0-6), where 0 represents Sunday.
 // getFullYear(): Returns the year (4 digits for dates between year 1000 and 9999).
