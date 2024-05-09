@@ -112,15 +112,16 @@ function encryption_function() {
 const decrypt = document.getElementById("decryption");
 decrypt.addEventListener("click", decryption_function);
 function decryption_function() {
-  const input = new_array.join("");
+  const input = document.getElementById("inputWord");
   const key = document.getElementById("keyy");
   const key_val = parseInt(key.value);
-  const split_store = input.split("");
-  const new_dec = split_store.map((i) => {
+  const store = input.value;
+  const split_store = store.split("");
+  const new_array = split_store.map((i) => {
     const word = (letters.indexOf(i) - key_val) % 92;
     return letters[word];
   });
   const display_word = document.getElementById("display");
-  display_word.innerHTML = new_dec.join("");
-  console.log(key_val);
+  display_word.innerHTML = new_array.join("");
+  const hehe = new_array.join("");
 }
