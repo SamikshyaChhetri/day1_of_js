@@ -107,7 +107,6 @@ function encryption_function() {
   });
   const display_word = document.getElementById("display");
   display_word.innerHTML = new_array.join("");
-  const hehe = new_array.join("");
 }
 const decrypt = document.getElementById("decryption");
 decrypt.addEventListener("click", decryption_function);
@@ -123,5 +122,4 @@ function decryption_function() {
   });
   const display_word = document.getElementById("display");
   display_word.innerHTML = new_array.join("");
-  const hehe = new_array.join("");
 }
