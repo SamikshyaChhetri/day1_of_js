@@ -12,7 +12,6 @@ const bodyElement = document.body;
 ele.addEventListener("click", (e) => {
   wrapp.style.display = "none";
   vdoo.style.display = "block";
-  // vdoo.style.border = "1px solid black";
   bodyElement.style.backgroundImage = "url('./imagess/nehuu.JPG')";
   bodyElement.style.backgroundSize = "cover";
 });
@@ -24,7 +23,6 @@ const animate = () => {
   newele.innerHTML += splitted_str[index];
   setTimeout(() => {
     index += 1;
-
     if (index == splitted_str.length) {
       newele.innerHTML = "";
       index = 0;
