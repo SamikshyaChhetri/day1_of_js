@@ -1,50 +1,56 @@
-.container{
-    font-size: 40px;
-    display: flex;
-    gap: 7px;
+.container {
+  font-size: 40px;
+  display: flex;
+  gap: 7px;
 }
-body{
-    background-image: url('imagess/bggg.jpg');
-    width: 100%;
+body {
+  background-image: url("imagess/bggg.jpg");
+  width: 100%;
 }
-#hrs{
-    margin-left: 1.5em;
-    margin-top: 0.5em;
+#hrs {
+  margin-left: 1.5em;
+  margin-top: 0.5em;
 }
-#minute{
-    margin-top: 0.5em;
+#minute {
+  margin-top: 0.5em;
 }
-#second{
-    margin-right: 0.5em;
-    margin-top: 0.5em;
+#second {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }
-#state{
-    color: rgb(255, 255, 255);
-    margin-top: 1.5em;
-    font-size: large;
-    padding: 0.5em;
-    box-shadow: 2px 1px 2px 3px rgb(0, 0, 0);
-    border-radius: 10px;
-    background-image: linear-gradient(135deg, rgb(218, 190, 233), rgb(117, 21, 227));
-
+#state {
+  color: rgb(255, 255, 255);
+  margin-top: 1.5em;
+  font-size: large;
+  padding: 0.5em;
+  box-shadow: 2px 1px 2px 3px rgb(0, 0, 0);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(218, 190, 233),
+    rgb(117, 21, 227)
+  );
 }
-.cover{
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(135deg, rgb(218, 190, 233), rgb(117, 21, 227));
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    padding:1em;
-    margin-left: 30em;
-    margin-right: 35em;
-    margin-top: 13em;
-    border-radius: 50px;
-    box-shadow: 3px 2px 2px 4px rgb(0, 0, 0);
-    text-align: center;
+.cover {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    135deg,
+    rgb(218, 190, 233),
+    rgb(117, 21, 227)
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 1em;
+  margin-left: 30em;
+  margin-right: 35em;
+  margin-top: 13em;
+  border-radius: 50px;
+  box-shadow: 3px 2px 2px 4px rgb(0, 0, 0);
+  text-align: center;
 }
-.hehe{
-    display: flex;
-    padding:2em 5em 0em 6em;
-    gap: 5px;
-
+.hehe {
+  display: flex;
+  padding: 2em 5em 0em 6em;
+  gap: 5px;
 }
