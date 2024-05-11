@@ -12,7 +12,6 @@ const func = () => {
 };
 
 func();
-
 const funcn = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/todos");
   console.log(data);
