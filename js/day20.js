@@ -20,7 +20,12 @@ const tasks = [
   },
 ];
 localStorage.setItem("tasks", JSON.stringify(tasks));
-localStorage.getItem("tasks", JSON.stringify(tasks));
+const storedItem = localStorage.getItem("tasks", JSON.stringify(tasks));
+const normalForm = JSON.parse(storedItem);
+console.log(normalForm);
+console.log(normalForm[0].id);
+// const StoredValue = localstorage.getItem("id");
+// console.log(StoredValue);
 
 // console.log(JSON.stringify(tasks));
 // let getstored = localStorage.getItem("tasks", tasks);
