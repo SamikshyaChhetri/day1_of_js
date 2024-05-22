@@ -1,3 +1,5 @@
+//local storage
+
 // localStorage.setItem("lastname", "Chhetri");
 // localStorage.setItem("firstname", "Samikshya");
 // document.getElementById("demo").innerHTML = localStorage.getItem("firstname");
@@ -24,7 +26,6 @@ const storedItem = localStorage.getItem("tasks", JSON.stringify(tasks));
 const normalForm = JSON.parse(storedItem);
 console.log(normalForm);
 console.log(normalForm[0].id);
-// const StoredValue = localstorage.getItem("id");
 // console.log(StoredValue);
 // console.log(JSON.stringify(tasks));
 // let getstored = localStorage.getItem("tasks", tasks);
