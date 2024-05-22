@@ -2,7 +2,7 @@
 // localStorage.setItem("firstname", "Samikshya");
 // document.getElementById("demo").innerHTML = localStorage.getItem("firstname");
 document.getElementById("demo");
-const tasks = JSON.stringify([
+const tasks = [
   {
     id: "1",
     title: "task 1",
@@ -18,8 +18,12 @@ const tasks = JSON.stringify([
     title: "task 3",
     description: "Description 3",
   },
-]);
-localStorage.setItem("tasks", tasks);
+];
+localStorage.setItem("tasks", JSON.stringify(tasks));
+localStorage.getItem("tasks", JSON.stringify(tasks));
+
 // console.log(JSON.stringify(tasks));
-// console.log(tasks);
-localStorage.getItem("tasks", tasks);
+// let getstored = localStorage.getItem("tasks", tasks);
+// console.log(getstored);
+// JSON.parse(tasks);
+// console.log(tasks[0]);
