@@ -26,7 +26,6 @@ console.log(normalForm);
 console.log(normalForm[0].id);
 // const StoredValue = localstorage.getItem("id");
 // console.log(StoredValue);
-
 // console.log(JSON.stringify(tasks));
 // let getstored = localStorage.getItem("tasks", tasks);
 // console.log(getstored);
