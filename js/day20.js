@@ -1,8 +1,3 @@
-//local storage
-
-// localStorage.setItem("lastname", "Chhetri");
-// localStorage.setItem("firstname", "Samikshya");
-// document.getElementById("demo").innerHTML = localStorage.getItem("firstname");
 document.getElementById("demo");
 const tasks = [
   {
